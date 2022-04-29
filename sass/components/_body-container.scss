@@ -1,6 +1,7 @@
 body {
   background-color: $bg-color;
   font-family: 'Roboto', sans-serif;
+  width: 1200px;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1170px) {
-    width: 1170;
+  @media screen and (min-width: 120px) {
+    width: 1200;
   }
 }
