@@ -1,0 +1,13 @@
+.works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.works__btn-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.works__btn-text .works__item:not(:last-child) {
+  margin-right: 8px;
+}

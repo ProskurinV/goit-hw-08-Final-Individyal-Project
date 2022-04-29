@@ -1,0 +1,37 @@
+// HEADER LOGO
+.header__logo {
+  color: $accent-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__logo-two {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+
+.header__main-nav .header__text {
+  line-height: 1.38;
+}
+
+// FOOTER LOGO
+
+.footer__logo {
+  color: $accent-color;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+.footer__text {
+  line-height: 1.17;
+}
+
+.footer__logo-three {
+  color: $bg-color;
+}
