@@ -67,3 +67,22 @@
   background-color: $accent-color;
   color: $bg-color;
 }
+
+// MOBILE VERSION
+.header__menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .header__icon-close {
+    display: none;
+  }
+  &.is-open .header__icon-close {
+    display: block;
+  }
+  &.is-open .header__icon-menu {
+    display: none;
+  }
+}

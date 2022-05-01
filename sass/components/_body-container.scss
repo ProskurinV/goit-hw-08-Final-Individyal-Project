@@ -1,11 +1,11 @@
 body {
   background-color: $bg-color;
   font-family: 'Roboto', sans-serif;
-  width: 1200px;
+  // width: 1200px;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -17,7 +17,7 @@ body {
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 120px) {
+  @media screen and (min-width: 1200px) {
     width: 1200;
   }
 }

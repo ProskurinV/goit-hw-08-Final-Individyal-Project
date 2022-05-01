@@ -3,15 +3,15 @@
   padding-bottom: 94px;
 }
 
-.features__list {
-  display: flex;
-  margin-left: calc(-1 * #{$picMargin});
-}
+// .features__list {
+//   display: flex;
+//   margin-left: calc(-1 * #{$picMargin});
+// }
 
-.features__item {
-  flex-basis: calc(100% / 4 - #{$picMargin});
-  margin-left: $picMargin;
-}
+// .features__item {
+//   flex-basis: calc(100% / 4 - #{$picMargin});
+//   margin-left: $picMargin;
+// }
 
 .features__icons-set {
   display: flex;

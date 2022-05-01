@@ -9,10 +9,10 @@
   }
 }
 
-.footer__content {
-  display: flex;
-  align-items: baseline;
-}
+// .footer__content {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .footer__adress a {
   color: $bg-color;
@@ -106,9 +106,9 @@
   margin-bottom: 20px;
 }
 
-.footer__subs-form {
-  display: flex;
-}
+// .footer__subs-form {
+//   display: flex;
+// }
 
 .footer__subscribe ::placeholder {
   font-family: Roboto;
