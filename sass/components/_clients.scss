@@ -1,37 +1,52 @@
 .clients {
   background-color: $bg-color;
 
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__regular-clients {
-  font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+
+    margin-bottom: $picMargin;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+
+    margin-bottom: 50px;
+  }
 }
 
 .clients__our-clients {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: calc(-1 * #{$picMargin});
+  margin-top: calc(-1 *#{$picMargin});
 }
 
 .clients__item {
-  flex-basis: calc(100% / 6 - #{$picMargin});
-  margin-left: $picMargin;
-
-  width: 170px;
-  height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -45,6 +60,33 @@
 
   &:hover .clients__icon {
     fill: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - #{$picMargin});
+    margin-left: $picMargin;
+    margin-top: $picMargin;
+
+    width: 170px;
+    height: 92px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc(100% / 3 - #{$picMargin});
+    margin-left: $picMargin;
+    margin-top: $picMargin;
+
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 2 - #{$picMargin});
+    margin-left: $picMargin;
+    margin-top: $picMargin;
+
+    width: 210px;
+    height: 92px;
   }
 }
 

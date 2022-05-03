@@ -169,6 +169,10 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
 
+  @media screen and (max-width: 1199px) {
+    font-style: 12px;
+  }
+
   color: rgba(117, 117, 117, 0.5);
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
