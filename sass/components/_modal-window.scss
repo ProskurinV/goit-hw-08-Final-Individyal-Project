@@ -10,6 +10,15 @@
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 479px) {
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 94px;
+    overflow-y: scroll;
+    width: 100%;
+  }
 }
 
 .backdrop.is-hidden {
@@ -23,21 +32,26 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
 
   background-color: $bg-color;
 
-  transform: translate(-50%, -50%) scale(1);
+  // transform: translate(-50%, -50%) scale(1);
   transition: transform 20ms cubic-bezier(0.4, 0, 0.2, 1);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+    width: 100%;
+  }
 }
 
 .modal__btn-close {

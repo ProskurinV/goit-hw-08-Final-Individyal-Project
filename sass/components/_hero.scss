@@ -5,7 +5,7 @@
   padding-bottom: 200px;
 
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -17,7 +17,7 @@
 
 .hero__title {
   color: $bg-color;
-  width: 696px;
+  max-width: 696px;
   font-family: Roboto;
   font-size: 44px;
   font-weight: 900;
@@ -27,4 +27,8 @@
   display: inline-block;
   text-align: center;
   margin: 0 0 30px 0;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+  }
 }

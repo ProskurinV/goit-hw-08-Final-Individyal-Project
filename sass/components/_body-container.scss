@@ -4,6 +4,10 @@ body {
   // width: 1200px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   padding-right: 15px;
