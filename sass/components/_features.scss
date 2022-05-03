@@ -1,17 +1,36 @@
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-// .features__list {
-//   display: flex;
-//   margin-left: calc(-1 * #{$picMargin});
-// }
+.features__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    margin-left: calc(-1 * #{$picMargin});
+  }
 
-// .features__item {
-//   flex-basis: calc(100% / 4 - #{$picMargin});
-//   margin-left: $picMargin;
-// }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: calc(-1 * #{$picMargin});
+  }
+}
+
+.features__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - #{$picMargin});
+    margin-left: $picMargin;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - #{$picMargin});
+    margin-left: $picMargin;
+  }
+}
 
 .features__icons-set {
   display: flex;
@@ -57,7 +76,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
+
 .features__description {
   color: $text-color;
   line-height: 1.7;
@@ -65,4 +89,8 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-align: left;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
