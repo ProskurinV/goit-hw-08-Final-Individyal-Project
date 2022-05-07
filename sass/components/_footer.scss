@@ -12,8 +12,20 @@
 .footer__content {
   display: flex;
   align-items: center;
+  flex-direction: column;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    margin-bottom: 60px;
+  }
+}
+
+.footer__logo-position {
   @media screen and (max-width: 767px) {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -41,6 +53,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: 60px;
   }
 }
 .footer__text {
@@ -54,21 +68,19 @@
   margin-bottom: 9px;
 }
 
-.footer__tel {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
-}
-
 .footer__join {
   margin-left: 70px;
   margin-right: 93px;
+
   @media screen and (max-width: 767px) {
     margin: 0 0 60px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
   }
 }
 
@@ -119,10 +131,11 @@
 }
 
 .footer__subscribe {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: block;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -133,6 +146,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  text-align: center;
+
   color: $bg-color;
 
   margin-bottom: 20px;
@@ -141,8 +156,12 @@
 .footer__subs-form {
   display: flex;
 
-  @media screen and (max-width: 767px) {
-    display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
   }
 }
@@ -158,7 +177,6 @@
 }
 
 .footer__subs-mail {
-  max-width: 358px;
   margin-right: 12px;
 
   padding-left: 16px;
@@ -171,13 +189,10 @@
   outline: none;
   color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
   @media screen and (max-width: 1199px) {
     max-width: 450px;
     height: 50px;
-    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 

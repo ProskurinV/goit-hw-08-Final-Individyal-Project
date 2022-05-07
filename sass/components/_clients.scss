@@ -71,7 +71,7 @@
     height: 92px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - #{$picMargin});
     margin-left: $picMargin;
     margin-top: $picMargin;
