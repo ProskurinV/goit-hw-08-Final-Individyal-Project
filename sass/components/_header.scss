@@ -17,15 +17,6 @@
   }
 }
 
-.header__main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0;
-  margin-right: auto;
-}
-
 .header__mobile-menu {
   display: none;
 
@@ -44,8 +35,17 @@
   }
 }
 
+.header__main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0;
+  margin-right: auto;
+}
+
 .header__site-nav {
-  // display: flex;
+  display: flex;
 
   font-weight: 500;
   font-size: 14px;
@@ -85,7 +85,7 @@
 }
 
 .header__header-contact-list {
-  // display: flex;
+  display: flex;
 
   line-height: 1.17;
   font-size: 14px;
@@ -102,8 +102,8 @@
 }
 
 .header__contact-link {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
 
   padding-top: 32px;
   padding-bottom: 32px;
