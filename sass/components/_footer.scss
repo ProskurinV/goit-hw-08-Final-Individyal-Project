@@ -133,10 +133,10 @@
 .footer__subscribe {
   display: block;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
 
 .footer__subs-title {
@@ -156,10 +156,10 @@
 .footer__subs-form {
   display: flex;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
@@ -190,9 +190,14 @@
   color: rgba(255, 255, 255, 0.6);
 
   @media screen and (max-width: 1199px) {
-    max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 450px;
   }
 }
 

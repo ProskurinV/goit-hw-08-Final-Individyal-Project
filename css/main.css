@@ -1100,13 +1100,6 @@ body.modal-open {
   display: block;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__subscribe {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .footer__subs-title {
   font-size: 14px;
   font-weight: 700;
@@ -1122,13 +1115,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__subs-form {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1190,9 +1176,16 @@ body.modal-open {
 
 @media screen and (max-width: 1199px) {
   .footer__subs-mail {
-    max-width: 450px;
     height: 50px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__subs-mail {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 450px;
   }
 }
 
