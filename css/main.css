@@ -84,7 +84,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200;
+    width: 1200px;
   }
 }
 
@@ -280,8 +280,8 @@ body.modal-open {
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bg-hero_1200.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-hero_1200.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -805,9 +805,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1046,7 +1046,7 @@ body.modal-open {
 
 @media screen and (max-width: 1199px) {
   .footer__subs-mail {
-    width: 450px;
+    max-width: 450px;
     height: 50px;
     margin-right: 0;
   }
