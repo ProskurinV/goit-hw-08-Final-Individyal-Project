@@ -645,12 +645,13 @@ body.modal-open {
 }
 
 .we-do {
+  display: none;
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .we-do {
-    display: none;
+    display: block;
   }
 }
 
