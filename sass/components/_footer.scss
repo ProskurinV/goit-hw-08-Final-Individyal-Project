@@ -133,10 +133,9 @@
 .footer__subscribe {
   display: block;
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__subs-title {

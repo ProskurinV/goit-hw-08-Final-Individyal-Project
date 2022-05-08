@@ -62,6 +62,13 @@
     fill: $accent-color;
   }
 
+  flex-basis: calc(100% / 2 - #{$picMargin});
+  margin-left: $picMargin;
+  margin-top: $picMargin;
+
+  width: 210px;
+  height: 92px;
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 6 - #{$picMargin});
     margin-left: $picMargin;
@@ -77,15 +84,6 @@
     margin-top: $picMargin;
 
     width: 226px;
-    height: 92px;
-  }
-
-  @media screen and (max-width: 767px) {
-    flex-basis: calc(100% / 2 - #{$picMargin});
-    margin-left: $picMargin;
-    margin-top: $picMargin;
-
-    width: 210px;
     height: 92px;
   }
 }
