@@ -164,7 +164,16 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__foto">
             <li class="our-team__item">
-              <img src="./images/img-3.jpg" alt="фотография" width="270" />
+              <img
+                srcset="
+                  ./images/img-min.jpg    270w,
+                  ./images/img@2x-min.jpg 520w,
+                  ./images/img@3x-min.jpg 810w
+                "
+                src="./images/img-min.jpg"
+                alt="фотография"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+              />
               <div class="our-team__card-content">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p class="our-team__prof">Product Designer</p>
@@ -226,7 +235,16 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/img-2.jpg" alt="фотография" width="270" />
+              <img
+                srcset="
+                  ./images/img-min-1.jpg    270w,
+                  ./images/img@2x-min-1.jpg 520w,
+                  ./images/img@3x-min-1.jpg 810w
+                "
+                src="./images/img-min-1.jpg"
+                alt="фотография"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+              />
               <div class="our-team__card-content">
                 <h3 class="our-team__name">Ольга Репина</h3>
                 <p class="our-team__prof">Frontend Developer</p>
@@ -264,7 +282,16 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/img-3.jpg" alt="фотография" width="270" />
+              <img
+                srcset="
+                  ./images/img-min-1-2.jpg    270w,
+                  ./images/img@2x-min-1-2.jpg 520w,
+                  ./images/img@3x-min-1-2.jpg 810w
+                "
+                src="./images/img-min-1-2.jpg"
+                alt="фотография"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+              />
               <div class="our-team__card-content">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p class="our-team__prof">Marketing</p>
@@ -302,7 +329,16 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./images/img.jpg" alt="фотография" width="270" />
+              <img
+                srcset="
+                  ./images/img-min-1-2-3.jpg    270w,
+                  ./images/img@2x-min-1-2-3.jpg 520w,
+                  ./images/img@3x-min-1-2-3.jpg 810w
+                "
+                src="./images/img-min-1-2-3.jpg"
+                alt="фотография"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
+              />
               <div class="our-team__card-content">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p class="our-team__prof">UI Designer</p>

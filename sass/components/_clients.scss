@@ -4,10 +4,8 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -21,11 +19,9 @@
   letter-spacing: 0.03em;
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
-    font-size: 28px;
+  font-size: 28px;
 
-    margin-bottom: $picMargin;
-  }
+  margin-bottom: $picMargin;
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
@@ -39,6 +35,10 @@
   flex-wrap: wrap;
   margin-left: calc(-1 * #{$picMargin});
   margin-top: calc(-1 *#{$picMargin});
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .clients__item {
@@ -69,21 +69,21 @@
   width: 210px;
   height: 92px;
 
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 6 - #{$picMargin});
-    margin-left: $picMargin;
-    margin-top: $picMargin;
-
-    width: 170px;
-    height: 92px;
-  }
-
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - #{$picMargin});
     margin-left: $picMargin;
     margin-top: $picMargin;
 
     width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - #{$picMargin});
+    margin-left: $picMargin;
+    margin-top: 0;
+
+    width: 170px;
     height: 92px;
   }
 }
