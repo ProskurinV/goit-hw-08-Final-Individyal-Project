@@ -37,21 +37,15 @@
 }
 
 .footer__logo-position {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
-    // display: flex;
-    // flex-wrap: nowrap;
-    // flex-direction: column;
-    // align-items: center;
     display: block;
   }
 }
@@ -80,7 +74,7 @@
 
   margin-bottom: 60px;
 
-  @media screen and (min-width: 766px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 
