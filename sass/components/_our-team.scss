@@ -31,6 +31,7 @@
 .our-team__foto {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     margin-left: calc(-1 * #{$picMargin});
     margin-top: calc(-1 * #{$picMargin});
   }
@@ -51,7 +52,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - #{$picMargin});
     margin-left: $picMargin;
-    margin-top: calc(-1 * #{$picMargin});
+    margin-top: $picMargin;
   }
 
   @media screen and (min-width: 1200px) {
