@@ -90,6 +90,10 @@
     display: none;
   }
 
+  @media screen and (max-width: 767.99px) {
+    margin-left: auto;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
