@@ -1633,7 +1633,8 @@ body.modal-open {
   display: inline-block;
   width: 15px;
   height: 15px;
-  min-width: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-right: 8.38px;
   border: 2px solid #212121;
   border-radius: 4px;
