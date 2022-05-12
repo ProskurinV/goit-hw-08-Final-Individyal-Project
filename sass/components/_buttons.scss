@@ -80,12 +80,9 @@
   border: none;
   background-color: transparent;
 
-  // cursor: pointer;
+  cursor: pointer;
 
-  // &:hover,
-  // &:focus {
-  //   color: $accent-color;
-  // }
+  z-index: 2;
 
   .header__icon-close {
     display: none;
@@ -93,15 +90,19 @@
   &.is-open .header__icon-close {
     display: block;
   }
+
   &.is-open .header__icon-menu {
     display: none;
   }
 
-  // @media screen and (max-width: 767.99px) {
-  //   // margin-left: auto;
-  // }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.header__icon:hover .header__icon-menu,
+.header__icon:hover .header__icon-close {
+  fill: $accent-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
