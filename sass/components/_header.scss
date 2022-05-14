@@ -11,10 +11,6 @@
   display: flex;
   align-items: center;
 
-  // @media screen and (max-width: 767.99px) {
-  //   position: relative;
-  // }
-
   @media screen and (min-width: 768px) {
     text-align: center;
   }
@@ -23,7 +19,7 @@
 .header__mobile-menu {
   background-color: $bg-color;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
     position: fixed;
     top: 0;
@@ -32,15 +28,13 @@
     width: 100vw;
     height: 100vh;
 
-    z-index: 1;
+    padding: 48px 40px;
 
-    padding-top: 48px;
-    padding-bottom: 48px;
+    z-index: 1;
 
     &.is-open {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
   }
 
@@ -65,17 +59,15 @@
 
   @media screen and (max-width: 767.98px) {
     margin: 0;
+    margin-bottom: auto;
   }
 }
 
 .header__site-nav {
   display: flex;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     flex-direction: column;
-
-    margin-left: 40px;
-    // margin-bottom: 302px;
 
     font-size: 40px;
     font-weight: 500;
@@ -116,7 +108,7 @@
 .header__site-nav-item:not(:last-child) {
   margin-right: 50px;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     margin-right: 0;
 
     padding-bottom: 32px;
@@ -144,8 +136,6 @@
 
   @media screen and (max-width: 767.88px) {
     flex-direction: column-reverse;
-
-    margin-left: 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -192,13 +182,17 @@
 }
 
 .header__contact-link--font {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     font-size: 34px;
+
+    @media screen and (max-width: 380px) {
+      font-size: 24px;
+    }
     color: $accent-color;
 
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.97px) {
     padding-top: 10px;
     padding-bottom: 21px;
   }
@@ -210,7 +204,7 @@
 
   fill: currentColor;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
@@ -219,7 +213,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
-  margin-left: 40px;
 
   gap: 10px;
 

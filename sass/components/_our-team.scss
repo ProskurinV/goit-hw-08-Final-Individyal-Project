@@ -32,13 +32,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * #{$picMargin});
-    margin-top: calc(-1 * #{$picMargin});
+    // margin-left: calc(-1 * #{$picMargin});
+    // margin-top: calc(-1 * #{$picMargin});
+    gap: 30px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: calc(-1 * #{$picMargin});
+    // margin-left: calc(-1 * #{$picMargin});
   }
 }
 .our-team__item {
@@ -50,14 +51,16 @@
   box-shadow: 0px 4px 4px 0px #00000040;
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - #{$picMargin});
-    margin-left: $picMargin;
-    margin-top: $picMargin;
+    flex-basis: calc((100% - #{$picMargin} * (2 - 1)) / 2);
+    // flex-basis: calc(100% / 2 - #{$picMargin});
+    // margin-left: $picMargin;
+    // margin-top: $picMargin;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - #{$picMargin});
-    margin-left: $picMargin;
+    flex-basis: calc((100% - #{$picMargin} * (4 - 1)) / 4);
+    // flex-basis: calc(100% / 4 - #{$picMargin});
+    // margin-left: $picMargin;
   }
 }
 

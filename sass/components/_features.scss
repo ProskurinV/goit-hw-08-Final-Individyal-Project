@@ -12,19 +12,23 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * #{$picMargin});
+
+    gap: 30px;
+    // margin-left: calc(-1 * #{$picMargin});
   }
 }
 
 .features__item {
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - #{$picMargin});
-    margin-left: $picMargin;
+    flex-basis: calc((100% - #{$picMargin} * (2 - 1)) / 2);
+    // flex-basis: calc(100% / 2 - #{$picMargin});
+    // margin-left: $picMargin;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - #{$picMargin});
-    margin-left: $picMargin;
+    flex-basis: calc((100% - #{$picMargin} * (4 - 1)) / 4);
+    // flex-basis: calc(100% / 4 - #{$picMargin});
+    // margin-left: $picMargin;
   }
 }
 
