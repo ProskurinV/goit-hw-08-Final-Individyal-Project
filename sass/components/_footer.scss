@@ -9,22 +9,19 @@
   }
 }
 
-// .footer__container {
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//     align-items: baseline;
-//     justify-content: center;
-//   }
-// }
+.footer__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
 
 .footer__content {
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    // align-items: center;
-    // flex-direction: column;
-
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
@@ -86,9 +83,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // display: flex;
-    // flex-direction: column;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    // display: block;
   }
 }
 .footer__text {
