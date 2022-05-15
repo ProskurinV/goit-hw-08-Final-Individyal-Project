@@ -43,7 +43,11 @@
   }
 }
 .our-team__item {
-  margin-bottom: $picMargin;
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: $picMargin;
+    }
+  }
 
   background-color: $bg-color;
 
