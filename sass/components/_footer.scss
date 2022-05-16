@@ -50,8 +50,6 @@
   @media screen and (min-width: 1200px) {
     display: block;
 
-    text-align: start;
-
     margin-right: 0;
   }
 }
@@ -85,7 +83,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
-    // display: block;
+    align-items: flex-start;
   }
 }
 .footer__text {
@@ -164,11 +162,6 @@
 
 .footer__subscribe {
   display: block;
-
-  @media screen and (min-width: 1200px) {
-    // display: flex;
-    // flex-wrap: wrap;
-  }
 }
 
 .footer__subs-title {
