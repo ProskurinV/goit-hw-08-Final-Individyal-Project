@@ -30,17 +30,29 @@
 .pictures__overlay-txt {
   position: absolute;
 
-  padding: 63px 24px;
+  height: 100%;
+
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $bg-color;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 479.98px) {
+    display: flex;
+    align-items: center;
     padding: 48px 24px;
 
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
 
